@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ConexionAsincronaHTTP</string>
+    <string name="tvInfoURL">Escribe una URL válida, incluye el protocolo</string>
+    <string name="etURLHint">Escribe aquí la URL...</string>
+    <string name="btnDescargar">Descargar</string>
+    <string name="tvDownloadedFile">Contenido del archivo</string>
+</resources>

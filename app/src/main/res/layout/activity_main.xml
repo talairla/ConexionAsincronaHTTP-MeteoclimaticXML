@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.teo.conexionasincronahttp.MainActivity">
+
+    <TextView
+        android:text="@string/tvInfoURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvInfoURL" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/etURLHint"
+        android:ems="10"
+        android:layout_below="@+id/tvInfoURL"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etURL"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/btnDescargar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etURL"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnDescargar"
+        android:layout_alignParentEnd="true"
+        android:onClick="descargarFichero"/>
+
+    <TextView
+        android:text="@string/tvDownloadedFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDownloadedFile"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnDescargar"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
